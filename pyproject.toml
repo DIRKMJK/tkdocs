@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tkdocs"
-version = "0.0.1"
+version = "0.0.2"
 description = "Download and parse parliamentary documents from the Dutch Lower House website" 
 readme = "README.md"
 authors = [{ name = "dirkmjk", email = "info@dirkmjk.nl" }]
@@ -13,7 +13,7 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
 ]
-dependencies = ['dateutil', 'pandas', 'requests', 'bs4']
+dependencies = ['python-dateutil', 'pandas', 'requests', 'bs4']
 
 
 [project.urls]
