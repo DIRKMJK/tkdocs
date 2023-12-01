@@ -22,7 +22,7 @@ query_tk(**data)
 
 This will search for motions with search query `referentiewaarden AND minimumloon`, between 15 March 2017 and 1 January 2023.
 
-Results will be stored as an excel file containing data including date, title, who sponsored the motion, and how parties voted (`../data/results.xlsx`). Since `download_files` was set to `True`, the pdf’s containing the motion text will be downloaded as well, and stored in `../data/files.
+Results will be stored as an excel file containing data including date, title, who sponsored the motion, and how parties voted (`../data/results.xlsx`). Since `download_files` was set to `True`, the pdf’s containing the motion text will be downloaded as well, and stored in `../data/files`.
 
 Als long as you don’t change `dir_results`, results will be merged if you do multiple queries.
 
