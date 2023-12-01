@@ -310,7 +310,7 @@ def query_tk(**params):
             results = process_results(results)
             results.to_excel(path_results, index=False)
         new_results_list.append(extract_details(url))
-        time.sleep(0.5)
+        time.sleep(1)
     results = pd.concat([prev_results, pd.DataFrame(new_results_list)], axis=0)
     results = process_results(results)
     results.to_excel(path_results, index=False)
@@ -330,4 +330,5 @@ def query_tk(**params):
             resp = requests.get(url, timeout=30)
             with open(path, 'wb') as f:
                 f.write(resp.content)
+            time.sleep(1)
     return
