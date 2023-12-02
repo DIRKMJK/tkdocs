@@ -241,9 +241,8 @@ def process_results(df):
         col = tup[0]
         ordered_columns.append(col.replace('_seats', '_vote'))
         ordered_columns.append(col)
-    missing = [col for col in df.columns if col not in ordered_columns]
-    if missing:
-        print('missing:', missing)
+    ordered_columns = [col for col in ordered_columns if col in list(df.columns)]
+
 
     df = df[ordered_columns].copy()
 

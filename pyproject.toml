@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tkdocs"
-version = "0.0.3"
+version = "0.0.4"
 description = "Download and parse parliamentary documents from the Dutch Lower House website" 
 readme = "README.md"
 authors = [{ name = "dirkmjk", email = "info@dirkmjk.nl" }]
